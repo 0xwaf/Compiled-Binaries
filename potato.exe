@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Title -->
+    <title>updog - /home/pentester/BINARIES</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/vendor/fontawesome-5.1/css/all.min.css">
+    <link rel="stylesheet" href="/static/vendor/datatable/datatables.min.css">
+    <link rel="stylesheet" href="/static/css/style.min.css">
+</head>
+
+<body>
+<div class="conn">
+
+    <!-- Header -->
+    <header id="header" class="d-flex align_item_center">
+        <div onclick="document.location='/'" class="logo_p">
+            <img src="/static/images/updog.png" alt="updog">
+        </div>
+
+        <div class="heading_title_p">
+            <h2>Directory: /home/pentester/BINARIES</h2>
+        </div>
+    </header>
+
+    <!-- ----- Upload Form ----- -->
+    <div class="inputUploadP">
+        <form method="post" action="/upload" enctype="multipart/form-data" class="uploadForm">
+            <!-- -- Upload File -- -->
+            <div class="uploadFile_P">
+                <input type="file" name="file" id="file" class="uploadFile"
+                       data-multiple-caption="{count} files selected" multiple/>
+                <label for="file">
+                    <i class="fa fa-upload"></i>
+                    <span>Choose a file…</span>
+                </label>
+                <input type="hidden" name="path" value="/home/pentester/BINARIES">
+            </div>
+            <!-- -- Upload Btn -- -->
+            <p class="uploadBtn_P">
+                <button type="submit" class="uploadBtn btn btn-primary">
+                    Upload
+                </button>
+            </p>
+        </form>
+    </div>
+
+    
+
+    <!-- Table -->
+    <section class="table_p table-responsive">
+        <table id="tableData" class="table table-hover compact">
+            <thead>
+            <tr>
+                <th width="4%"><!--Type (Directory or File)--></th>
+                <th>Name</th>
+                <th>Size</th>
+                <th>Last Modified</th>
+                <th></th> <!-- View file -->
+            </tr>
+            </thead>
+            <tbody>
+            
+            <tr>
+                <td> <!-- Icon -->
+                    
+                    <button class="file_ic"><i class="far fa-file"></i></button><!-- File icon -->
+                    
+                </td>
+                <td> <!-- Name -->
+                    <a href="/SigmaPotato.exe">SigmaPotato.exe</a>
+                </td>
+                <td data-order="63488"> <!-- File size -->
+                    62 KB
+                </td>
+                <td data-order="1740490751.539066"> <!-- File last modified -->
+                    Tue Feb 25 08:39:11 2025
+                </td>
+                <td> <!-- View file -->
+                    
+                    <a href="/SigmaPotato.exe?view">View in browser</a>
+                    
+                </td>
+            </tr>
+            
+            <tr>
+                <td> <!-- Icon -->
+                    
+                    <button class="file_ic"><i class="far fa-file"></i></button><!-- File icon -->
+                    
+                </td>
+                <td> <!-- Name -->
+                    <a href="/Snaffler.exe">Snaffler.exe</a>
+                </td>
+                <td data-order="486400"> <!-- File size -->
+                    475 KB
+                </td>
+                <td data-order="1740490839.5757318"> <!-- File last modified -->
+                    Tue Feb 25 08:40:39 2025
+                </td>
+                <td> <!-- View file -->
+                    
+                    <a href="/Snaffler.exe?view">View in browser</a>
+                    
+                </td>
+            </tr>
+            
+            <tr>
+                <td> <!-- Icon -->
+                    
+                    <button class="file_ic"><i class="far fa-file"></i></button><!-- File icon -->
+                    
+                </td>
+                <td> <!-- Name -->
+                    <a href="/Rubeus.exe">Rubeus.exe</a>
+                </td>
+                <td data-order="452096"> <!-- File size -->
+                    441.5 KB
+                </td>
+                <td data-order="1740490718.7869716"> <!-- File last modified -->
+                    Tue Feb 25 08:38:38 2025
+                </td>
+                <td> <!-- View file -->
+                    
+                    <a href="/Rubeus.exe?view">View in browser</a>
+                    
+                </td>
+            </tr>
+            
+            <tr>
+                <td> <!-- Icon -->
+                    
+                    <button class="file_ic"><i class="far fa-file"></i></button><!-- File icon -->
+                    
+                </td>
+                <td> <!-- Name -->
+                    <a href="/godpotato.exe">godpotato.exe</a>
+                </td>
+                <td data-order="57344"> <!-- File size -->
+                    56 KB
+                </td>
+                <td data-order="1740490795.2993963"> <!-- File last modified -->
+                    Tue Feb 25 08:39:55 2025
+                </td>
+                <td> <!-- View file -->
+                    
+                    <a href="/godpotato.exe?view">View in browser</a>
+                    
+                </td>
+            </tr>
+            
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>
+            updog v1.4
+        </p>
+    </footer>
+
+</div> <!-- end class conn -->
+
+<!-- Scripts -->
+<script src="/static/js/jquery-3.4.1.min.js"></script>
+<script src="/static/vendor/datatable/datatables.min.js"></script>
+<script src="/static/js/main.js"></script>
+
+</body>
+</html>
